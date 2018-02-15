@@ -1,5 +1,4 @@
-import sys 														#This line is used for Linking OpenCV with Python3
-sys.path.append('/usr/local/lib/python3.5/site-packages')
+# Code to generate various shapes in The image
 import cv2
 import numpy as np
 
