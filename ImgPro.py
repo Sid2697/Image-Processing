@@ -1,5 +1,3 @@
-import sys 														#This line is used for Linking OpenCV with Python3
-sys.path.append('/usr/local/lib/python3.5/site-packages')
 import cv2
 import numpy as np
 
