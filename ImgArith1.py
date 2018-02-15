@@ -1,5 +1,3 @@
-import sys
-sys.path.append('/usr/local/lib/python3.5/site-packages')
 import cv2
 import numpy as np
 
@@ -22,11 +20,11 @@ img1_fg=cv2.bitwise_and(img1,img1, mask=mask)
 dst = cv2.add(img_bg,img1_fg)
 img[0:rows,0:cols]=dst
 
-#cv2.imshow('img_bg',img_bg)
-#cv2.imshow('dst',dst)
-#cv2.imshow('img1_fg',img1_fg)
-#cv2.imshow('res',img)
-#cv2.imshow('Mask_inv',mask_inv)
+cv2.imshow('img_bg',img_bg)
+cv2.imshow('dst',dst)
+cv2.imshow('img1_fg',img1_fg)
+cv2.imshow('res',img)
+cv2.imshow('Mask_inv',mask_inv)
 cv2.imshow('Mask',mask)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
